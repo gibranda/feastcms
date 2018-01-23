@@ -1,0 +1,498 @@
+#iconsModal { z-index: 99999 }
+.icons-list {
+  width: 100%;
+  display: block;
+  clear: both;
+  margin: 10px 0;
+  padding: 0 10px;
+  overflow-y: scroll;
+  max-height: 500px;
+}
+.icons-list i {
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+  float: left;
+  margin-right: 5px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 64px;
+  display: inline-block;
+}
+.icons-list i.selected {
+  background-color: #f3f3f3;
+}
+.content-wrapper {
+  min-height: 750px
+}
+.select2, .select2-hidden-accessible, select option, select2-container {
+    font-family: 'FontAwesome', 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+}
+
+/*div.mce-fullscreen {
+  z-index: 9999 !important;
+}*/
+
+.mce-tinymce .mce-i-mfn-sc { background:url(../img/ico-shortcode.png) no-repeat center;}
+.mce-tinymce .mce-i-mfn-progress { background:url(../img/ico-progress.png) no-repeat center;}
+.mce-tinymce .mce-i-mfn-icons { background:url(../img/ico-icons.png) no-repeat center;}
+
+div.mce-fullscreen { z-index: 9999;}
+
+.shortcode_btn {
+  background: #efefef;
+  height: 100px;
+  min-width: 100px;
+  padding: 0 15px;
+  line-height: 100px;
+  color: #555;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.shortcode_btn:hover {
+  background: #fff;
+  box-shadow: 2px 2px 4px #ddd; 
+  color: #111;
+  border: 1px solid #f5f5f5;
+}
+
+.shortcode_btn i {
+  font-size: 48px;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+.delete_multi {
+  margin-bottom: 10px;
+  opacity: 0;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.delete_multi.show {
+  opacity: 1;
+}
+
+/* tabs */
+.tabs-below > .nav-tabs > li,
+.tabs-right > .nav-tabs > li,
+.tabs-left > .nav-tabs > li {
+    border-top: 0px;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+    display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+    display: block;
+}
+
+.tabs-below > .nav-tabs {
+    border-top: 1px solid #ddd;
+}
+
+.tabs-below > .nav-tabs > li {
+    margin-top: -1px;
+    margin-bottom: 0;
+}
+
+.tabs-below > .nav-tabs > li > a {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.tabs-below > .nav-tabs > li > a:hover,
+.tabs-below > .nav-tabs > li > a:focus {
+    border-top-color: #ddd;
+    border-bottom-color: transparent;
+}
+
+.tabs-below > .nav-tabs > .active > a,
+.tabs-below > .nav-tabs > .active > a:hover,
+.tabs-below > .nav-tabs > .active > a:focus {
+    border-color: #fff #ddd #ddd #ddd;
+}
+
+.tabs-left > .nav-tabs > li,
+.tabs-right > .nav-tabs > li {
+    float: none;
+}
+
+.tabs-left > .nav-tabs > li,
+.tabs-right > .nav-tabs > li {
+    min-width: 74px;
+    margin-right: 0;
+    margin-bottom: 3px;
+    border-top: 0px;
+}
+
+.tabs-left > .nav-tabs {
+    float: left;
+    margin-right: 19px;
+    border-right: 1px solid #ddd;
+}
+
+.tabs-left > .nav-tabs > li > a {
+    margin-right: -1px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+    border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+    border-color: #ddd transparent #ddd #ddd;
+    border-right-color: #ffffff;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.tabs-right > .nav-tabs {
+    float: right;
+    margin-left: 19px;
+    border-left: 1px solid #ddd;
+}
+
+.tabs-right > .nav-tabs > li > a {
+    margin-left: -1px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.tabs-right > .nav-tabs > li > a:hover,
+.tabs-right > .nav-tabs > li > a:focus {
+    border-color: #eeeeee #eeeeee #eeeeee #dddddd;
+}
+
+.tabs-right > .nav-tabs .active > a,
+.tabs-right > .nav-tabs .active > a:hover,
+.tabs-right > .nav-tabs .active > a:focus {
+    border-color: #ddd #ddd #ddd transparent;
+    border-left-color: #ffffff;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+table .btn a, table .label a {
+  color: white
+}
+
+span.select2 {
+  width: 100% !important;
+}
+
+.select2-selection--multiple{
+    overflow: hidden !important;
+    height: auto !important;
+}
+
+
+.roles-list {
+  margin-bottom: 5px;
+}
+
+/* Loader */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  z-index: 800;
+}
+.loading {
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.loading > div {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.loading .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.loading .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.loading .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.loading .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+/* Switchery */
+
+.switch-sm .switchery {
+    height: 15px;
+    width: 25px;
+}
+
+.switch-sm .switchery > small {
+    height: 15px;
+    width: 15px;
+}
+
+.switch-md .switchery {
+    height: 20px;
+    width: 35px;
+}
+
+.switch-md .switchery > small {
+    height: 20px;
+    width: 20px;
+}
+
+.switch-lg .switchery {
+    height: 25px;
+    width: 40px;
+}
+
+.switch-lg .switchery > small {
+    height: 25px;
+    width: 25px;
+}
+
+form span.switchery {
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+
+form ol li:not(:last-child) {
+  padding-bottom: 10px !important;
+}
+
+form .switch-left span.switchery {
+  position: absolute;
+  left: 225px;
+}
+form .ios-switch.default span.switchery {
+  position: relative;
+}
+
+.ios-switch { position: relative; }
+
+.customize-slider .form-group :not(.ios-switch) label,
+.sliderSource .form-group :not(.ios-switch) label {
+  padding-top: 5px;
+}
+.customize-slider .form-group:has(.ios-switch),
+.sliderSource .form-group:has(.ios-switch) {
+  display: flex;
+}
+
+
+.form-group {
+	position: relative;
+}
+
+.form-group.bordered, .control-group.bordered {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid #ddd
+}
+
+.form-group .fa-calendar {
+  position: absolute;
+  right: 7px;
+  top: 35px;
+  font-size: 16px;
+}
+
+.form-group.img-radio {
+  padding: 0;
+}
+.form-group.img-radio label {
+  position: relative;
+  cursor: pointer !important;
+  display: block;
+  overflow: hidden;
+}
+
+.form-group.img-radio label > input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  opacity: 0;
+  cursor: pointer;
+}
+.form-group.img-radio label > input + img {
+  position: relative;
+  border: 2px solid #aaa;
+  filter: grayscale(75%);
+  -moz-filter: grayscale(75%);
+  -webkit-filter: grayscale(75%);
+  z-index: 30;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all ease-in-out 0.1s;
+  -webkit-transition: all ease-in-out 0.1s;
+  -moz-transition: all ease-in-out 0.1s;
+  -o-transition: all ease-in-out 0.1s;
+  cursor: pointer !important;
+}
+
+.form-group.img-radio label > input:checked + img {
+  border: 2px solid #2B384E;
+  filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+
+.pretty i::after, .pretty i::before {
+    top: 5px;
+}
+
+.mdi-check::before {
+    content: "\f00c";
+}
+
+.pretty i::before {
+  position: relative;
+  z-index: 999;
+  left: 0;
+  display: inline-block;
+  vertical-align: bottom;
+  color: transparent;
+  background-color: #fff;
+}
+
+.mdi::before, .mdi-set {
+    display: inline-block;
+    font: normal normal normal 12px/1 "FontAwesome";
+    font-size: inherit;
+    text-rendering: auto;
+    line-height: 12px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+
+
+/* Date Picker */
+
+/*.datepicker {
+    padding: 10px!important;
+    border: 1px solid #e0e0e0!important;
+    border-radius: 0!important;
+    -webkit-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1)!important;
+    -moz-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1)!important;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1)!important;
+}
+*/
+.datepicker table tr td,
+.datepicker table tr th, 
+.datepicker table tr td span {
+    border-radius: 0!important;
+}
+
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active:hover:hover,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled:hover:hover,
+.datepicker table tr td.active:focus,
+.datepicker table tr td.active:hover:focus,
+.datepicker table tr td.active.disabled:focus,
+.datepicker table tr td.active.disabled:hover:focus,
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled:hover.active,
+.open .dropdown-toggle.datepicker table tr td.active,
+.open .dropdown-toggle.datepicker table tr td.active:hover,
+.open .dropdown-toggle.datepicker table tr td.active.disabled,
+.open .dropdown-toggle.datepicker table tr td.active.disabled:hover {
+    color: #ffffff;
+    background-color: #3498db;
+    border: 0;
+}
+
+.datepicker table tr td span.active:hover,
+.datepicker table tr td span.active:hover:hover,
+.datepicker table tr td span.active.disabled:hover,
+.datepicker table tr td span.active.disabled:hover:hover,
+.datepicker table tr td span.active:focus,
+.datepicker table tr td span.active:hover:focus,
+.datepicker table tr td span.active.disabled:focus,
+.datepicker table tr td span.active.disabled:hover:focus,
+.datepicker table tr td span.active:active,
+.datepicker table tr td span.active:hover:active,
+.datepicker table tr td span.active.disabled:active, 
+.datepicker table tr td span.active.disabled:hover:active, 
+.datepicker table tr td span.active.active,
+.datepicker table tr td span.active:hover.active, 
+.datepicker table tr td span.active.disabled.active, 
+.datepicker table tr td span.active.disabled:hover.active, 
+.open .dropdown-toggle.datepicker table tr td span.active, 
+.open .dropdown-toggle.datepicker table tr td span.active:hover,
+.open .dropdown-toggle.datepicker table tr td span.active.disabled,
+.open .dropdown-toggle.datepicker table tr td span.active.disabled:hover {
+    color: #ffffff;
+    background-color: #3498db;
+    border: 0;
+}

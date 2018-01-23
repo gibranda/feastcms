@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h3>Custom dialog</h3>
+	Select your Slider 
+      <div class="form-group img-radio" id="sliderType">
+        <label class="col-md-3">
+          <input type="radio" id="content" class="no-uniform" name="sliderType" value="1" <?php echo $slide->sliderType == 1 ? ' checked' : ''; ?> />
+          <img src="<?=base_url('feast-includes/admin/assets/images/slider/latest.png')?>" class="img-responsive" data-type="type_latest" style="z-index: 500">
+        </label>
+        <label class="col-md-3">
+          <input type="radio" id="content" class="no-uniform" name="sliderType" value="2" <?php echo $slide->sliderType == 2 ? ' checked' : ''; ?> />
+          <img src="<?=base_url('feast-includes/admin/assets/images/slider/custom-posts.png')?>" class="img-responsive" data-type="type_cust_post" style="z-index: 500">
+        </label>
+        <label class="col-md-3">
+          <input type="radio" id="content" class="no-uniform" name="sliderType" value="3" <?php echo $slide->sliderType == 3 ? ' checked' : ''; ?> />
+          <img src="<?=base_url('feast-includes/admin/assets/images/slider/custom-category.png')?>" class="img-responsive" data-type="type_cust_cat" style="z-index: 500">
+        </label>
+        <label class="col-md-3">
+          <input type="radio" id="content" class="no-uniform" name="sliderType" value="4" <?php echo $slide->sliderType == 4 ? ' checked' : ''; ?> />
+          <img src="<?=base_url('feast-includes/admin/assets/images/slider/custom-slider.png')?>" class="img-responsive" data-type="type_cust_slider" style="z-index: 500">
+        </label>
+      </div>	
+	<button onclick="top.tinymce.activeEditor.windowManager.getWindows()[0].close();">Close dialog</button>
+</body>
+</html>

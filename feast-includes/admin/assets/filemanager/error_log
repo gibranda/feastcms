@@ -1,0 +1,58 @@
+[20-Nov-2015 00:45:47 Europe/Rome] PHP Warning:  chmod() [<a href='function.chmod'>function.chmod</a>]: No such file or directory in /home/konnyuutazas/public_html/filemanager/upload.php on line 88
+[20-Nov-2015 00:46:47 Europe/Rome] PHP Warning:  chmod() [<a href='function.chmod'>function.chmod</a>]: No such file or directory in /home/konnyuutazas/public_html/filemanager/upload.php on line 88
+[19-Dec-2015 11:51:27 Europe/Rome] PHP Warning:  chmod() [<a href='function.chmod'>function.chmod</a>]: No such file or directory in /home/konnyuutazas/public_html/filemanager/upload.php on line 88
+[19-Dec-2015 14:45:02 Europe/Rome] PHP Warning:  chmod() [<a href='function.chmod'>function.chmod</a>]: No such file or directory in /home/konnyuutazas/public_html/filemanager/upload.php on line 88
+[23-Dec-2015 13:13:00 Europe/Rome] PHP Warning:  chmod() [<a href='function.chmod'>function.chmod</a>]: No such file or directory in /home/konnyuutazas/public_html/filemanager/upload.php on line 88
+[23-Dec-2015 13:13:06 Europe/Rome] PHP Warning:  chmod() [<a href='function.chmod'>function.chmod</a>]: No such file or directory in /home/konnyuutazas/public_html/filemanager/upload.php on line 88
+[23-Dec-2015 13:14:32 Europe/Rome] PHP Warning:  chmod() [<a href='function.chmod'>function.chmod</a>]: No such file or directory in /home/konnyuutazas/public_html/filemanager/upload.php on line 88
+[23-Dec-2015 13:17:03 Europe/Rome] PHP Fatal error:  Uncaught exception 'Exception' with message 'file ../source/Turkish Bath Gooooood/470_Turkish Bath Tiny Akropol Travel (5).jpg is missing or invalid' in /home/konnyuutazas/public_html/filemanager/include/php_image_magician.php:346
+Stack trace:
+#0 /home/konnyuutazas/public_html/filemanager/include/utils.php(218): imageLib->resizeImage(122, 91, 'crop')
+#1 /home/konnyuutazas/public_html/filemanager/upload.php(93): create_img('../source/Turki...', '../thumbs/Turki...', 122, 91)
+#2 {main}
+  thrown in /home/konnyuutazas/public_html/filemanager/include/php_image_magician.php on line 346
+[27-Dec-2015 12:51:24 Europe/Rome] PHP Warning:  chmod() [<a href='function.chmod'>function.chmod</a>]: No such file or directory in /home/konnyuutazas/public_html/filemanager/upload.php on line 88
+[27-Dec-2015 18:40:37 Europe/Rome] PHP Fatal error:  Uncaught exception 'Exception' with message 'file ../source/Paradise/11033104_10207223260839280_5001258214534893114_n.jpg is missing or invalid' in /home/konnyuutazas/public_html/filemanager/include/php_image_magician.php:346
+Stack trace:
+#0 /home/konnyuutazas/public_html/filemanager/include/utils.php(218): imageLib->resizeImage(122, 91, 'crop')
+#1 /home/konnyuutazas/public_html/filemanager/upload.php(93): create_img('../source/Parad...', '../thumbs/Parad...', 122, 91)
+#2 {main}
+  thrown in /home/konnyuutazas/public_html/filemanager/include/php_image_magician.php on line 346
+[27-Dec-2015 18:42:09 Europe/Rome] PHP Fatal error:  Uncaught exception 'Exception' with message 'file ../source/Paradise/11227406_10207223261679301_2014191224082067983_n.jpg is missing or invalid' in /home/konnyuutazas/public_html/filemanager/include/php_image_magician.php:346
+Stack trace:
+#0 /home/konnyuutazas/public_html/filemanager/include/utils.php(218): imageLib->resizeImage(122, 91, 'crop')
+#1 /home/konnyuutazas/public_html/filemanager/upload.php(93): create_img('../source/Parad...', '../thumbs/Parad...', 122, 91)
+#2 {main}
+  thrown in /home/konnyuutazas/public_html/filemanager/include/php_image_magician.php on line 346
+[13-Jan-2016 16:41:19 Europe/Rome] PHP Warning:  imagejpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/konnyuutazas/public_html/filemanager/include/php_image_magician.php on line 2827
+[13-Jan-2016 16:41:20 Europe/Rome] PHP Warning:  imagejpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/konnyuutazas/public_html/filemanager/include/php_image_magician.php on line 2827
+[13-Jan-2016 16:41:20 Europe/Rome] PHP Warning:  Unknown: write failed: Disk quota exceeded (122) in Unknown on line 0
+[13-Jan-2016 16:41:20 Europe/Rome] PHP Warning:  Unknown: Failed to write s[19-Jan-2016 01:13:49 Europe/Rome] PHP Warning:  chmod(): No such file or directory in /home/konnyuutazas/public_html/filemanager/upload.php on line 88
+[28-Feb-2016 19:07:40 Europe/Rome] PHP Warning:  chmod(): No such file or directory in /home/konnyuutazas/public_html/filemanager/upload.php on line 88
+[28-Feb-2016 20:22:21 Europe/Rome] PHP Warning:  chmod(): No such file or directory in /home/konnyuutazas/public_html/filemanager/upload.php on line 88
+[03-Mar-2016 10:55:13 Europe/Rome] PHP Warning:  unlink(../source/0ac04edbe58197c3e33e3225198eb4cc.JPG): No such file or directory in /home/konnyuutazas/public_html/filemanager/execute.php on line 77
+[03-Mar-2016 10:55:30 Europe/Rome] PHP Warning:  unlink(../source/10e18725e42ac0f8943d0ff6a9e7f787.jpg): No such file or directory in /home/konnyuutazas/public_html/filemanager/execute.php on line 77
+[03-Mar-2016 10:55:30 Europe/Rome] PHP Warning:  unlink(../source/10e18725e42ac0f8943d0ff6a9e7f787.jpg): No such file or directory in /home/konnyuutazas/public_html/filemanager/execute.php on line 77
+[03-Mar-2016 10:55:30 Europe/Rome] PHP Warning:  unlink(../source/10e18725e42ac0f8943d0ff6a9e7f787.jpg): No such file or directory in /home/konnyuutazas/public_html/filemanager/execute.php on line 77
+[03-Mar-2016 10:55:31 Europe/Rome] PHP Warning:  unlink(../source/10e18725e42ac0f8943d0ff6a9e7f787.jpg): No such file or directory in /home/konnyuutazas/public_html/filemanager/execute.php on line 77
+[03-Mar-2016 10:55:31 Europe/Rome] PHP Warning:  unlink(../source/10e18725e42ac0f8943d0ff6a9e7f787.jpg): No such file or directory in /home/konnyuutazas/public_html/filemanager/execute.php on line 77
+[03-Mar-2016 10:55:31 Europe/Rome] PHP Warning:  unlink(../source/10e18725e42ac0f8943d0ff6a9e7f787.jpg): No such file or directory in /home/konnyuutazas/public_html/filemanager/execute.php on line 77
+[03-Mar-2016 10:55:31 Europe/Rome] PHP Warning:  unlink(../source/10e18725e42ac0f8943d0ff6a9e7f787.jpg): No such file or directory in /home/konnyuutazas/public_html/filemanager/execute.php on line 77
+[03-Mar-2016 10:55:31 Europe/Rome] PHP Warning:  unlink(../source/10e18725e42ac0f8943d0ff6a9e7f787.jpg): No such file or directory in /home/konnyuutazas/public_html/filemanager/execute.php on line 77
+[03-Mar-2016 10:55:32 Europe/Rome] PHP Warning:  unlink(../source/10e18725e42ac0f8943d0ff6a9e7f787.jpg): No such file or directory in /home/konnyuutazas/public_html/filemanager/execute.php on line 77
+[03-Mar-2016 10:55:32 Europe/Rome] PHP Warning:  unlink(../source/10e18725e42ac0f8943d0ff6a9e7f787.jpg): No such file or directory in /home/konnyuutazas/public_html/filemanager/execute.php on line 77
+[03-Mar-2016 22:42:40 Europe/Rome] PHP Warning:  unlink(../source/578e81a64086498b15f2e88ed27891bb_thumb.jpg): No such file or directory in /home/konnyuutazas/public_html/filemanager/execute.php on line 77
+[03-Mar-2016 22:42:40 Europe/Rome] PHP Warning:  unlink(../source/578e81a64086498b15f2e88ed27891bb_thumb.jpg): No such file or directory in /home/konnyuutazas/public_html/filemanager/execute.php on line 77
+[03-Mar-2016 22:42:40 Europe/Rome] PHP Warning:  unlink(../source/578e81a64086498b15f2e88ed27891bb_thumb.jpg): No such file or directory in /home/konnyuutazas/public_html/filemanager/execute.php on line 77
+[03-Mar-2016 22:42:40 Europe/Rome] PHP Warning:  unlink(../source/578e81a64086498b15f2e88ed27891bb_thumb.jpg): No such file or directory in /home/konnyuutazas/public_html/filemanager/execute.php on line 77
+[03-Mar-2016 22:45:32 Europe/Rome] PHP Warning:  unlink(../source/fc876c0a352211f8839c621689293dfc_thumb.jpg): No such file or directory in /home/konnyuutazas/public_html/filemanager/execute.php on line 77
+[03-Mar-2016 22:47:35 Europe/Rome] PHP Warning:  unlink(../source/962d7b26442cfc539043a1b4b1b2e462_thumb.jpg): No such file or directory in /home/konnyuutazas/public_html/filemanager/execute.php on line 77
+[23-Apr-2017 13:19:35 Africa/Cairo] PHP Warning:  chmod(): No such file or directory in /home/eadhassan/public_html/feast-includes/assets/filemanager/upload.php on line 88
+[23-Apr-2017 13:54:21 Africa/Cairo] PHP Warning:  chmod(): No such file or directory in /home/eadhassan/public_html/feast-includes/assets/filemanager/upload.php on line 88
+[30-Apr-2017 16:33:03 Africa/Cairo] PHP Warning:  chmod(): No such file or directory in /home/eadhassan/public_html/feast-includes/assets/filemanager/upload.php on line 88
+[06-Jul-2017 11:04:26 Africa/Cairo] PHP Fatal error:  Uncaught exception 'Exception' with message 'file ../../../../feast-content/uploads/slide-27.jpg is missing or invalid' in /home/eadhassan/public_html/demo/feast-cms/feast-includes/admin/assets/filemanager/include/php_image_magician.php:346
+Stack trace:
+#0 /home/eadhassan/public_html/demo/feast-cms/feast-includes/admin/assets/filemanager/include/utils.php(218): imageLib->resizeImage(122, 91, 'crop')
+#1 /home/eadhassan/public_html/demo/feast-cms/feast-includes/admin/assets/filemanager/upload.php(93): create_img('../../../../fea...', '../../../../fea...', 122, 91)
+#2 {main}
+  thrown in /home/eadhassan/public_html/demo/feast-cms/feast-includes/admin/assets/filemanager/include/php_image_magician.php on line 346

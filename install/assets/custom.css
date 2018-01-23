@@ -1,0 +1,9 @@
+.callout.callout-danger, .callout.callout-info, .callout.callout-success, .callout.callout-warning {
+    background-color: #fff !important;
+    color: #525252 !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,.15);
+}
+
+ol li {
+	line-height: 2;
+}

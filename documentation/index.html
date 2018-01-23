@@ -1,0 +1,2117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FEAST CMS | Documentation</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="assets/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="assets/dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="assets/plugins/fancybox/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/tranquil-heart.css">
+
+    <style type="text/css">
+      .col-md-4 .thumbnail img {
+        height: 250px !important;
+        min-width: 100%;
+        overflow: hidden;
+      }
+      .col-md-6 .thumbnail img {
+        height: 400px !important;
+      }
+      section {
+        padding-top: 40px;
+        border-top: 1px solid #d3d3d3;
+      }
+      hr {
+        background: #d5d5d5;
+        border-color: #d5d5d5;
+        box-shadow: -1px -1px 1px #ffffff
+      }
+      section:first-child {
+        margin-top: 0px;
+        border-top: none;
+      }
+      .bold {
+        font-weight: bold;
+      }
+      *:focus {
+        background: initial;
+      }
+      li:focus, a:focus {
+        background: transparent !important;
+      }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="skin-black fixed" data-spy="scroll" data-target="#scrollspy">
+    <div class="wrapper">
+
+      <header class="main-header">
+        <!-- Logo -->
+        <!-- Logo -->
+        <a href="" class="logo">
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+          <span class="logo-mini"><img src="../feast-includes/admin/assets/images/logo-small.png" height="30" alt="F"></span>
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg" style="height: 50px; line-height: 50px; display: block;display: flex;align-content: center;align-items: center;"><img src="../feast-includes/admin/assets/images/logo.png" class="img-responsive" alt="FEAST CMS"></span>
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <div class="sidebar" id="scrollspy">
+
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+          <ul class="nav sidebar-menu">
+            <li class="header">TABLE OF CONTENTS</li>
+            <li class="active"><a href="#introduction"><i class="fa fa-circle-o"></i> Introduction</a></li>
+            <li class="active"><a href="#screenshoots"><i class="fa fa-circle-o"></i> ScreenShoots</a></li>
+            <li><a href="#structure"><i class="fa fa-circle-o"></i> Folder structure</a></li>
+            <li><a href="#installation"><i class="fa fa-circle-o"></i> Installation</a></li>
+            <li class="treeview" id="scrollspy-features">
+              <a href="#features"><i class="fa fa-circle-o"></i> Features</a>
+              <ul class="nav treeview-menu">
+                <li><a href="#features-themes">Themes</a></li>
+                <li><a href="#features-custom-options">Custom options</a></li>
+                <li><a href="#features-menu-manager">Menu menager <label class="label label-success pull-right">New</label></a></li>
+                <li><a href="#features-modules">Module system <label class="label label-success pull-right">New</label></a></li>
+                <li><a href="#features-visual-editor">Visual editor <label class="label label-success pull-right">New</label></a></li>
+                <li><a href="#features-sliders">Sliders</a></li>
+                <li><a href="#features-media">Media</a></li>
+                <li><a href="#features-languages">Languages</a></li>
+                <li class="treeview" id="scrollspy-features">
+                  <a href="#features-functions">Functions</a>
+                  <ul class="nav treeview-menu">
+                    <li><a href="#functions-user">User functions</a></li>
+                    <li><a href="#functions-post">Post functions</a></li>
+                    <li><a href="#functions-slider">Slider functions</a></li>
+                    <li><a href="#functions-category">Category functions</a></li>
+                    <li><a href="#functions-custom-options">Custom options functions</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+          <h1>
+            FEAST CMS Documentation
+            <small>Current version 2.1</small>
+          </h1>
+        </div>
+
+        <!-- Main content -->
+        <div class="content body">
+
+<section id="introduction">
+  <h2 class="page-header"><a href="#introduction">Introduction</a></h2>
+  <p class="lead">
+    <b>FEAST CMS</b> is a PHP content management system built on codeIgniter framework with fully functionality and customizable. with <b>FEAST CMS</b> you can manage your website whatever you activity with our awesome functions and features, you also can create your own theme with the possibility of  <a href="#features-custom-options">custom options system</a> with one line of code. you can check all our features by clicking this link <a href="#features">Check all features</a> 
+  </p>
+
+  <h3>Todo list:</h3>
+  <ul class="bring-up">
+    <li>Widets system</li>
+    <li class="text-success" style="text-decoration: line-through;">Modules system</li>
+    <li class="text-success" style="text-decoration: line-through">Menu manager</li>
+    <li class="text-success" style="text-decoration: line-through">Visual editor</li>
+    <li>More free themes</li>
+    <li>and more <i class="fa fa-smile-o"></i></li>
+  </ul>
+
+
+</section><!-- /#introduction -->
+
+
+<!-- ============================================================= -->
+
+
+<section id="screenshoots">
+  <h2 class="page-header"><a href="#screenshoots">ScreenShoots</a></h2>
+
+  <div class="row text-center">
+    <div class="col-md-4">
+      <div class="thumbnail">        
+        <a class="fancybox" rel="galery1" href="assets/imgs/dashboard-01.png" title="Dashboard"><img src="assets/imgs/dashboard-01.png" class="img-responsive"></a>
+        <div class="caption">
+          <h4>Dashboard</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="thumbnail">        
+        <a class="fancybox" rel="galery1" href="assets/imgs/dashboard-02.png" title="Menu Manager"><img src="assets/imgs/dashboard-02.png" class="img-responsive"></a>
+        <div class="caption">
+          <h4>Menu Manager</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="thumbnail">        
+        <a class="fancybox" rel="galery1" href="assets/imgs/dashboard-03.png" title="Module system"><img src="assets/imgs/dashboard-03.png" class="img-responsive"></a>
+        <div class="caption">
+          <h4>Module system</h4>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row text-center">
+    <div class="col-md-4">
+      <div class="thumbnail">        
+        <a class="fancybox" rel="galery1" href="assets/imgs/dashboard-04.png" title="Themes page"><img src="assets/imgs/dashboard-04.png" class="img-responsive"></a>
+        <div class="caption">
+          <h4>Themes page</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="thumbnail">        
+        <a class="fancybox" rel="galery1" href="assets/imgs/dashboard-05.png" title="Theme options"><img src="assets/imgs/dashboard-05.png" class="img-responsive"></a>
+        <div class="caption">
+          <h4>Theme options</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="thumbnail">        
+        <a class="fancybox" rel="galery1" href="assets/imgs/dashboard-06.png" title="Create slider"><img src="assets/imgs/dashboard-06.png" class="img-responsive"></a>
+        <div class="caption">
+          <h4>Create slider</h4>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+</section><!-- /#introduction -->
+
+
+
+<!-- ============================================================= -->
+
+<section id="structure">
+  <h2 class="page-header"><a href="#structure">Folder structure</a></h2>
+
+  <pre class="hierarchy bring-up"><code class="language-bash" data-lang="bash">File Hierarchy of the Source Code Package
+
+Feast-CMS/
+│
+├── documentation/
+│   
+├── feast-content/
+│   │
+│   ├── language/
+│   │
+│   ├── modules/
+│   │
+│   ├── themes/
+│   │
+│   ├── thumbs/
+│   │
+│   ├── uploads/
+│   │
+│   └── users/
+│ 
+├── feast-includes/
+│   │
+│   ├── admin/
+│   │
+│   ├── application/
+│   │
+│   └── system/
+│ 
+├── install/
+│
+└── index.php</code></pre>
+</section>
+
+<!-- ============================================================= -->
+
+<section id="installation">
+  <h2 class="page-header"><a href="#installation">Installation</a></h2>
+  <p class="lead">How to install Feast CMS on your host.</p>
+  <ol class="bring-up">
+    <li>Extract <code>FeastCMS.zip</code>.</li>
+    <li>Upload all files and folders from feast-cms directory to your website.</li>
+    <li>Create a new MySql database and a user for it.</li>
+    <li>Using your browser to visit this link <code>http://your-website/install.</code> or <code>http://your-website/folder/install.</code></li>
+    <li>Folow the installation wizard to finish the installation.</li>
+  </ol>
+</section>
+
+
+<!-- ============================================================= -->
+
+<section id="features">
+  <h2 class="page-header"><a href="#features">Features</a></h2>
+  <p class="lead">check what <strong>FeastCMS</strong> can do for your work.</p>
+  <ul class="bring-up" style="line-height: 28px">
+    <li><a href="#features-themes">Themes system</a></li>
+    <li><a href="#features-custom-options">Custom options</a></li>
+    <li><a href="#features-menu-manager">Menu manager <span class="label label-success">New</span></a></li>
+    <li><a href="#features-modules">Module system <span class="label label-success">New</span></a></li>
+    <li><a href="#features-visual-editor">Visual editor <span class="label label-success">New</span></a></li>
+    <li><a href="#features-sliders">Sliders system</a></li>
+    <li><a href="#features-media">Media manager</a></li>
+    <li><a href="#features-languages">Language system</a></li>
+    <li><a href="#features-functions">Custom functions</a></li>
+  </ul>
+</section>
+
+<!-- ============================================================= -->
+
+<section id="features-themes">
+  <h2 class="page-header"><a href="#features-themes">Themes system</a></h2>
+  <p class="lead">
+    We worked hard to make our system able to adapt to the activity of your website whatever, and our template system was one of the most important things we have to provide in our system to be able to customize it to maximum degree.
+  </p>
+
+  <div class="callout callout-danger lead">
+    <h4>Tip!</h4>
+    <p>jQuery and bootstrap JS files must place on <code>&LT;heade></code> tag.</p>
+  </div>
+
+  <pre class="hierarchy bring-up"><code class="language-bash" data-lang="bash">Theme file structure
+
+your-theme/
+│
+├── layouts/
+│   │
+│   ├── includes/
+│   │
+│   ├── main.php
+│   │
+├── theme_options/
+│   │
+│   ├── functions.php (this file contains the custom options functions)
+│   │
+│   └── index.php (this file contains the view of theme custom panel in dashboard)
+│
+├── category.php
+│
+├── index.php
+│
+├── page.php
+│
+├── posts.php
+│
+├── screenshot.png
+│
+├── single.php
+│
+└── style.css (* required file - this file contains the theme information)
+</code></pre>
+
+  <div class="callout callout-info lead">
+    <h4>Note:</h4>
+    <p>if any of not required files are not found in your theme, the requested file will be automatically including from the default theme.</p>
+  </div>
+
+  <div class="box box-success">
+    <div class="box-header">
+      <h4 class="box-title">Style.css file example</h4>
+    </div>
+    <div class="box-body">
+  <pre class="prettyprint"><code class="language-css" data-lang="css">/**
+* Theme Name: Default Theme
+* Theme URI: http://demo.eadhassan.com/feast-cms
+* Version: 1.0
+* Description: Default theme for FEAST CMS
+* Author: Ead Hassan
+* Author URI: http://eadhassan.com
+*/
+</code></pre>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ============================================================= -->
+
+<section id="features-custom-options">
+  <h2 class="page-header"><a href="#features-custom-options">Custom options</a></h2>
+  <p class="lead">with our custom option feature you can create a fully customizable themes with theme panel on dashboard to customize your own theme options.</p>
+
+  <h4>How to use custom options</h4>
+  <p class="lead">
+  you have to create to files on your theme in <code>theme_options</code> directory<br>
+  first file named <code>functions.php</code> and second file named <code>index.php</code>
+  </p>
+
+  <p class="lead"><strong>There is two three functions for this feature :</strong></p>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="box">
+      <div class="box-header with-border">
+        <h3 class="box-title">Explain is_option() function</h3>
+      </div><!-- /.box-header -->
+      <div class="box-body">
+
+      <table class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <th colspan="2">Function: <small> is_option( <code>$option = ''</code> ) </small></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="bold">Parameters</td>
+            <td><code>$option</code> : string</td>
+          </tr>
+          <tr>
+            <td class="bold">Return</td>
+            <td>TRUE if is there an option with the given name, FALSE if not</td>
+          </tr>
+          <tr>
+            <td class="bold">Return type</td>
+            <td>bool</td>
+          </tr>
+        </tbody>
+      </table>
+
+      </div><!-- /.box-body -->
+    </div><!-- /.box -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="box">
+      <div class="box-header with-border">
+        <h3 class="box-title">Explain add_option() function</h3>
+      </div><!-- /.box-header -->
+      <div class="box-body">
+
+      <table class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <th colspan="2">Function: <small>add_option( <code>$option = ''</code>, <code>$value = ''</code> )</small></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="bold">Parameters</td>
+            <td><code>$option</code> : string, <code>$value</code> : string</td>
+          </tr>
+          <tr>
+            <td class="bold">Return</td>
+            <td>UPDATE if option already exists, INSERT if not exist</td>
+          </tr>
+          <tr>
+            <td class="bold">Return type</td>
+            <td>bool</td>
+          </tr>
+        </tbody>
+      </table>
+
+      </div><!-- /.box-body -->
+    </div><!-- /.box -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="box">
+      <div class="box-header with-border">
+        <h3 class="box-title">Explain get_option() function</h3>
+      </div><!-- /.box-header -->
+      <div class="box-body">
+
+      <table class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <th colspan="2">Function: <small> get_option( <code>$option = ''</code> ) </small></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="bold">Parameters</td>
+            <td><code>$option</code> : string</td>
+          </tr>
+          <tr>
+            <td class="bold">Return</td>
+            <td>the option value that stored in from database</td>
+          </tr>
+          <tr>
+            <td class="bold">Return type</td>
+            <td>mixed</td>
+          </tr>
+        </tbody>
+      </table>
+
+      </div><!-- /.box-body -->
+    </div><!-- /.box -->
+  </div>
+</div>
+
+
+<div class="box box-success">
+  <div class="box-header">
+    <h4 class="box-title">Usage example</h4>
+  </div>
+  <div class="box-body">
+<h5><strong>functions.php file</strong></h5>
+  <pre class="prettyprint"><code class="language-php" data-lang="php">&LT;?php
+function options()
+{
+    if(is_option('OPTION_NAME') == FALSE){add_option('OPTION_NAME', 'DEFAULT_VALUE');}
+
+    if(is_option('OPTION_NAME') == FALSE){add_option('OPTION_NAME', 'DEFAULT_VALUE');}
+
+    if(is_option('OPTION_NAME') == FALSE){add_option('OPTION_NAME', 'DEFAULT_VALUE');}
+}
+
+options();
+?>  
+</code></pre>
+
+<h5><strong>index.php file</strong></h5>
+
+  <pre class="prettyprint language-html"><code class="language-html" data-lang="html">&LT;!-- 
+  Demo text input
+  ** please check functions section to learn more about this function 
+--> 
+&LT;div class="col-xs-12">
+  &LT;?=admin_input_text(
+    'Posts per page', // input label
+    'posts_per_page', // input name
+    get_option('posts_per_page'), // input value
+    'Set number of posts per page.' // help text
+  )?>
+&LT;/div>
+</code></pre>
+
+<h5><strong>This code will return something like this</strong></h5>
+<img src="assets/imgs/screenshoot-07.png" class="img-responsive">
+  </div>
+</div>
+
+</section>
+
+<!-- ============================================================= -->
+
+<section id="features-sliders">
+  <h2 class="page-header"><a href="#features-sliders">Sliders</a></h2>
+  <p class="lead">most websites have one or more sliders and certainly it would be nice to have easy control over creating or modifying, so we make our sliders system friendly and easy to use with many options and wonderful features</p>
+
+  <p class="lead"><strong>ScreenShoots:</strong></p>
+  <div class="row text-center">
+    <div class="col-md-6">
+      <div class="thumbnail">        
+        <a class="fancybox" rel="galery2" href="assets/imgs/screenshoot-08.png"><img src="assets/imgs/screenshoot-08.png" class="img-responsive"></a>
+        <div class="caption">
+          <h4>Latest posts</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="thumbnail">        
+        <a class="fancybox" rel="galery2" href="assets/imgs/screenshoot-09.png"><img src="assets/imgs/screenshoot-09.png" class="img-responsive"></a>
+        <div class="caption">
+          <h4>Custom slider</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h4>Slider types :</h4>
+
+  <div class="row">
+
+    <div class="col-md-6">
+      <div class="box box-solid">
+        <div class="box-header with-border">
+          <i class="fa fa-file-text"></i>
+          <h3 class="box-title">Custom posts : <small>Return an array of selected posts as slides</small></h3>
+        </div><!-- /.box-header -->
+        <div class="box-body">
+          <ul>
+            <li>Select posts</li>
+            <li>Post picture as background</li>
+            <li>Static background</li>
+            <br>
+          </ul>
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div> 
+
+    <div class="col-md-6">
+      <div class="box box-solid">
+        <div class="box-header with-border">
+          <i class="fa fa-tag"></i>
+          <h3 class="box-title">Custom categories : <small>Return an array of posts as slides</small></h3>
+        </div><!-- /.box-header -->
+        <div class="box-body">
+          <ul>
+            <li>Post categories</li>
+            <li>Post num <small> - number of posts</small></li>
+            <li>Post picture as background</li>
+            <li>Static background</li>
+          </ul>
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div> 
+
+    <div class="col-md-6">
+      <div class="box box-solid">
+        <div class="box-header with-border">
+          <i class="fa fa-file-text"></i>
+          <h3 class="box-title">Latest posts : <small>Return an array of latest posts as slides</small></h3>
+        </div><!-- /.box-header -->
+        <div class="box-body">
+          <ul>
+            <li>Post num <small> - number of posts</small></li>
+            <li>Post picture as background</li>
+            <li>Static background</li>
+            <li>expect posts</li>
+            <li>expect categories</li>
+            <br>
+          </ul>
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div> 
+
+    <div class="col-md-6">
+      <div class="box box-solid">
+        <div class="box-header with-border">
+          <i class="fa fa-image"></i>
+          <h3 class="box-title">Custom slider : <small>Return an array of your slides</small></h3>
+        </div><!-- /.box-header -->
+        <div class="box-body">
+          <ul>
+            <li>slide title <small class="text-danger"> - for each slide</small></li>
+            <li>slide description <small class="text-danger"> - for each slide</small></li>
+            <li>slide background <small class="text-danger"> - for each slide</small></li>
+            <li>slide button text <small class="text-danger"> - for each slide</small></li>
+            <li>slide button link <small class="text-danger"> - for each slide</small></li>
+            <li>slide button target <small class="text-danger"> - for each slide</small></li>
+          </ul>
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div> 
+
+  </div>
+
+</section>
+
+<!-- ============================================================= -->
+
+<section id="features-media">
+  <h2 class="page-header"><a href="#features-media">Media manager</a></h2>
+  <p class="lead">with our media manager you can upload, rename or delete media files (images, videos and more), and when you add new post or page you can select post image from media manager easy</p>
+
+  <p class="lead"><strong>ScreenShoots:</strong></p>
+  <div class="row text-center">
+
+    <div class="col-md-8 col-md-offset-2">
+      <div class="thumbnail">        
+        <a class="fancybox" href="assets/imgs/screenshoot-10.png"><img src="assets/imgs/screenshoot-10.png" class="img-responsive"></a>
+        <div class="caption">
+          <h4>Select post image</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============================================================= -->
+
+<section id="features-menu-manager">
+  <h2 class="page-header"><a href="#features-media">Menu manager</a></h2>
+  <p class="lead">One of the best new features on v2.0 is Menu manager so you can now create multiple menus and manage items using drag and drop nesting. and for use any of this items just use the only <a href="#menu-function">function</a> below on any place in your theme files.</p>
+
+  <p class="lead"><strong>ScreenShoots:</strong></p>
+  <div class="row text-center">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="thumbnail">        
+        <a class="fancybox" href="assets/imgs/dashboard-02.png"><img src="assets/imgs/dashboard-02.png" class="img-responsive"></a>
+        <div class="caption">
+          <h4>Menu manager</h4>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row" id="menu-function">
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> show_menu( <code>$alias = ''</code>, <code>$config = array()</code> ) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$alias (string)</code> : Menu alias<br>
+              <code>$config (array) - <small>optional</small></code> : custom html tags <br></td>
+            </tr>
+            <tr>
+              <td class="bold">Accepted config</td>
+              <td>nav_tag_open, <br>
+                nav_tag_close, <br>
+                item_tag_open, <br>
+                item_tag_close, <br>
+                parent_tag_open, <br>
+                parent_tag_close, <br>
+                parent_anchor_tag, <br>
+                parentl1_tag_open, <small class="text-info">(submenu parent)</small> <br>
+                parentl1_tag_close, <small class="text-info">(submenu parent)</small> <br>
+                parentl1_anchor_tag, <small class="text-info">(submenu parent)</small> <br>
+                children_tag_open, <br>
+                children_tag_close</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>HTML menu structure with items from database</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>HTML</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+
+    <div class="box box-success">
+      <div class="box-header">
+        <h4 class="box-title">Usage example</h4>
+      </div>
+      <div class="box-body">
+      <pre class="prettyprint"><code class="language-php" data-lang="php">&LT;?php
+    echo show_menu('alias', array(
+              'nav_tag_open'        => '&LT;ul class="nav navbar-nav">',            
+              'parentl1_tag_open'   => '&LT;li class="dropdown-submenu">',
+              'parentl1_anchor'     => '&LT;a href="%s" class="dropdown-toggle" data-toggle="dropdown">%s &LT;span class="caret">&LT;/span>&LT;/a>',
+              'parent_tag_open'     => '&LT;li class="dropdown">',
+              'parent_anchor'       => '&LT;a href="%s" class="dropdown-toggle" data-toggle="dropdown">%s &LT;span class="caret">&LT;/span>&LT;/a>',
+              'children_tag_open'   => '&LT;ul class="dropdown-menu">'
+            ));
+
+
+    ## You don't need to whrite all config items,
+    ## every item has a defult value if you don't whrite it :)
+?>  
+      </code></pre>
+
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- ============================================================= -->
+
+<section id="features-modules">
+  <h2 class="page-header"><a href="#features-media">Module system</a></h2>
+  <p class="lead">This new feature helps you integrate a small project with the system without having to modify the basic system files, all you need is your knowledge of the <a href="https://www.codeigniter.com/" target="_blank">CodeIgniter framework</a> . And will be developed in the coming period to compensate for its codes to be able to deal with it fully without the need for any knowledge of the <a href="https://www.codeigniter.com/" target="_blank">CodeIgniter framework</a> .</p>
+
+  <div class="callout callout-success lead">
+  <p>I working now on some tutorials to show you how to create basic and advanced module with custom options and settings.</p>
+  </div>
+
+  <p class="lead"><strong>ScreenShoots:</strong></p>
+  <div class="row text-center">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="thumbnail">        
+        <a class="fancybox" href="assets/imgs/dashboard-03.png"><img src="assets/imgs/dashboard-03.png" class="img-responsive"></a>
+        <div class="caption">
+          <h4>Module system</h4>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================= -->
+
+<section id="features-visual-editor">
+  <h2 class="page-header"><a href="#features-media">Visual editor</a></h2>
+  <p class="lead">This feature is the most powerful in v2.0 where you can create shortcuts for each element of your template so that it can be inserted into the page with one click.</p>
+
+  <div class="callout callout-success lead">
+  <p>I working now on some tutorials to show you how to create a custom shortcode for using on visual editor. And will be developed in the coming period to have more customization like drag and drop elements ...</p>
+  </div>
+
+  <p class="lead"><strong>ScreenShoots:</strong></p>
+  <div class="row text-center">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="thumbnail">        
+        <a class="fancybox" href="assets/imgs/screenshoot-06.png"><img src="assets/imgs/screenshoot-06.png" class="img-responsive"></a>
+        <div class="caption">
+          <h4>Visual editor</h4>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================= -->
+
+<section id="features-languages">
+  <h2 class="page-header"><a href="#features-languages">Languages</a></h2>
+
+  <div class="callout callout-info lead">
+  <h4>Tips:</h4>
+  <p>When you create a new language the system will automatically create a new fields on database for post/page title and body and will add a new tab on post/page add or edit page it will be something like this :</p>
+  <p>Also when the user change website language the system will look for the post title and body for current language and if it not set the system will return the default language title and body</p>
+  </div>
+
+  <div class="row text-center">
+
+    <div class="col-md-8 col-md-offset-2">
+      <div class="thumbnail">        
+        <a class="fancybox" href="assets/imgs/screenshoot-12.png"><img src="assets/imgs/screenshoot-12.png" class="img-responsive"></a>
+        <div class="caption">
+          <h4>Post translation</h4>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="callout callout-success lead">
+  <h4>Be Happy:</h4>
+  <p>For more customizable you can create a custom languages phrases for doing this please follow the steps below</p>
+  </div>
+
+  <p class="lead"><strong>First step: </strong> in <code>feast-content</code> directory create a <code>language</code> directory if not exist.</p>
+  <p class="lead"><strong>Second step: </strong> in <code>language</code> directory create a folder for each language you want to translate with the same name of language.</p>
+  <p class="lead"><strong>Third step: </strong> in each language directory create a file named <code>lang.php</code> and add your custom phrases as shown below.</p>
+
+  <pre class="prettyprint language-html"><code class="language-html" data-lang="html">&LT;?php 
+
+$lang['key'] = 'value';
+$lang['key'] = 'value %s' (%s will replaced with the second parameter in feast_line() function if exist);
+$lang['key'] = 'value';
+$lang['key'] = 'value';
+
+?>
+</code></pre>
+
+  <p class="lead">and to call a language phrase just echo this function in any place <code>feast_line( $key, $optional );</code>.</p>
+
+</section>
+
+<!-- ============================================================= -->
+
+<section id="features-functions">
+  <h2 class="page-header"><a href="#features-functions">Functions</a></h2>
+
+  <h3 id="functions-user"><a href="#functions-user">User functions</a></h3>
+
+  <div class="row">
+
+    <div class="col-md-7">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> is_logged_in() </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Return</td>
+              <td>TRUE if user logged in, FALSE if not</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>bool</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> is_admin() </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Return</td>
+              <td>TRUE if current session is admin, FALSE if not</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>bool</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> get_user( <code>$field = ''</code>, <code>$id = ''</code>) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$field (string)</code> : field name<br>
+              <code>$id (int - optional)</code> : user id <br></td>
+            </tr>
+            <tr>
+              <td class="bold">Accepted keys</td>
+              <td>(username, email, fullname, firstname, lastname, dateofbirth, gender, country and picture)</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>The field value for current user if second parameter is not set</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>string</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-9 -->
+
+    <div class="col-md-5">
+      <div class="box box-success">
+        <div class="box-header with-border">
+          <h4 class="box-title">Usage example</h4>
+        </div>
+        <div class="box-body">
+<pre class="prettyprint">&LT;?php
+
+/*
+ * check if is current user 
+ * is logged in and is admin
+ */
+
+if( is_logged_in() && is_admin() ) {
+
+  // echo username is admin 
+  echo get_user('username') . ' is Admin';
+
+} else {
+
+  // echo username is user 
+  echo get_user('username') . ' is a user';
+
+} else {
+  
+  // if no logged in
+  echo 'Not logged in';
+
+}
+
+?>
+</pre>          
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <hr>
+  
+  <h3 id="functions-post"><a href="#functions-post">Post functions</a></h3>
+
+  <div class="callout callout-info lead">
+  <h4>Note:</h4>
+  <p>All post functions are work for post or page with the same parameters.</p>
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> post_title( <code>$post = array()</code> ) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$post (array)</code> : the post array</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>post title for current language session</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>string</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> list_posts( <code>$limit = null</code>, <code>$offset = 0</code>, <code>$category = null</code>) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$limit (int - optional)</code> : number of posts<br>
+              <code>$offset (int - optional)</code> : number of offset id`s<br>
+              <code>$category (int - optional)</code> : category id to get posts from</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>array of posts with given options</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>array</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> post_body( <code>$post = array()</code> ) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$post (array)</code> : the post array</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>post body for current language session</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>string</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> post_excerpt( <code>$post = array()</code>, <code>$chars = null</code>, <code>$words = null</code>) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$post (array)</code> : the post array<br>
+              <code>$chars (int - optional)</code> : number of characters to limit<br>
+              <code>$chars (int - optional)</code> : number of words to limit</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>post body for current language session with limitation</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>string</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> post_image( <code>$post = array()</code> ) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$post (array)</code> : the post array</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>post image URL in full width</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>string</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> post_thumb( <code>$post = array()</code>, <code>$size = null</code> ) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$post (array)</code> : the post array<br>
+              <code>$size (string)</code> : 'small', 'medium', 'wide' or 'large'</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>post thumbnail URL in given size or default thumbnail size</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>string</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> post_url( <code>$post = array()</code> ) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$ (array)</code> : the post array</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>post or page full URL</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>string</td>
+            </tr>
+          </tbody>
+        </table>
+        <br><br>
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> post_date( <code>$post = array()</code>, <code>$nice = FALSE</code> ) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$post (array)</code> : the post array<br>
+              <code>$nice (bool)</code> : TRUE : FALSE</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>post date in nice formate if second parameter is TRUE, full date if FALSE</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>date</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> post_author( <code>$post = array()</code> ) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$post (array)</code> : the post array</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>post author</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>string</td>
+            </tr>
+          </tbody>
+        </table>
+        <br><br>
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> post_category( <code>$post = array()</code> ) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$post (array)</code> : the post array</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>post category</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>string</td>
+            </tr>
+          </tbody>
+        </table>
+        <br><br>
+       </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> post_cat_url( <code>$post = array()</code> ) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$post (array)</code> : the post array</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>post category URI</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>string</td>
+            </tr>
+          </tbody>
+        </table>
+        <br><br>
+       </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> post_option( <code>$option</code>, <code>$post = array()</code> ) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$option (string)</code> : your custom post option<br>
+              <code>$post (array)</code> : the post array</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>the given post option</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>mixed</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> comment_box( <code>$id</code> ) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$id (int)</code> : current post or page id</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>a working comment box with Ajax call</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>HTML</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> show_comments() </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Return</td>
+              <td>list comments for current post or page with Ajax</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>HTML</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+  </div>
+
+  <p class="lead">Demo code for post functions</p>
+<pre class="prettyprint language-html"><code class="language-html" data-lang="html">&LT;?php
+
+/*
+ * in this demo we will list a posts throw a foreach loop
+ * and we will echo post title and post excerpt (limited to 15 words)
+ * see a code below
+ */
+
+  foreach( list_posts() as $post ):
+
+    echo '&LT;h3>' . post_title( $post ) . '&LT;h3>';
+    echo '&LT;p>' . post_excerpt( $post, 15 ) . '&LT;p>';
+
+  endforeach;
+
+  // this code will return something like
+  // &LT;h3>Post title&LT;/h3> 
+  // &LT;p>Post excerpt&LT;p>
+
+?>
+</code></pre>
+
+  <hr>
+
+  <h3 id="functions-slider"><a href="#functions-slider">Slider functions</a></h3>
+
+  <div class="row">
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> slide_title( <code>$slide = array()</code> ) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$slide (array)</code> : the slide array</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>Title of current slide</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>string</td>
+            </tr>
+          </tbody>
+        </table>
+        <br><br>
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> slide_text( <code>$slide = array()</code>, <code>$limit = optional</code> ) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$slide (array)</code> : the slide array<br>
+              <code>$limit (int - optional)</code> : limit a number of words</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>text of current slide</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>string</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> slide_background( <code>$slide = array()</code> ) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$slide (array)</code> : the slide array</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>background URL of current slide</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>string</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> slide_button( <code>$slide = array()</code> ) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$slide (array)</code> : the slide array</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>button URL of current slide</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>string</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> slide_button_text( <code>$slide = array()</code> ) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$slide (array)</code> : the slide array</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>button text of current slide</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>string</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> slide_button_target( <code>$slide = array()</code> ) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$slide (array)</code> : the slide array</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>button target URL of current slide</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>string</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+    
+  </div>
+
+  <hr>
+
+  <h3 id="functions-category"><a href="#functions-category">Category functions</a></h3>
+
+  <div class="row">
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> list_cats() </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Return</td>
+              <td>array of categories</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>array</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> cat_title( <code>$cat = array()</code> ) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$cat (array)</code> : the category array</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>Category title</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>string</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small> cat_url( <code>$cat = array()</code> ) </small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td><code>$cat (array)</code> : the category array</td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>Category full URL</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>string</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+    
+  </div>
+
+  <hr>
+
+  <h3 id="functions-custom-options"><a href="#functions-custom-options">Custom options functions</a></h3>
+
+  <div class="row">
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small>admin_input_text( <code>$label = ''</code>, <code>$name = ''</code>, <code>$value = ''</code>, <code>$help = FALSE</code> )</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td>
+                <code>$label (string)</code> : input label<br>
+                <code>$name (string)</code> : input name<br>
+                <code>$value (string)</code> : input value<br>
+                <code>$help (string - optional)</code> : help text shown under the input label
+              </td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>bootstrap <code>.form-group</code> class with label and text input</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>HTML</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+   <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small>admin_input_spinner( <code>$label = ''</code>, <code>$name = ''</code>, <code>$value = ''</code>, <code>$help = FALSE</code> )</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td>
+                <code>$label (string)</code> : input label<br>
+                <code>$name (string)</code> : input name<br>
+                <code>$value (string)</code> : input value<br>
+                <code>$help (string - optional)</code> : help text shown under the input label
+              </td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>bootstrap <code>.form-group</code> class with label and text input</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>HTML</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small>admin_textarea( <code>$label = ''</code>, <code>$name = ''</code>, <code>$value = ''</code>, <code>$help = FALSE</code> )</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td>
+                <code>$label (string)</code> : textarea label<br>
+                <code>$name (string)</code> : textarea name<br>
+                <code>$value (string)</code> : textarea value<br>
+                <code>$help (string - optional)</code> : help text shown under the textarea label
+              </td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>bootstrap <code>.form-group</code> class with label and textarea</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>HTML</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small>admin_radio( <code>$label = ''</code>, <code>$name = ''</code>, <code>$value = ''</code>, <code>$help = FALSE</code> )</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td>
+                <code>$label (string)</code> : label label<br>
+                <code>$name (string)</code> : label name<br>
+                <code>$value (string)</code> : label value<br>
+                <code>$help (string - optional)</code> : help text shown under the label label
+              </td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>bootstrap <code>.form-group</code> class with label and a beautiful radio buttons</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>HTML</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small>admin_radio_image( <code>$label = ''</code>, <code>$name = ''</code>, <code>$options = array()</code>, <code>$value = ''</code>, <code>$help = FALSE</code> )</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td>
+                <code>$label (string)</code> : label label<br>
+                <code>$name (string)</code> : label name<br>
+                <code>$options (array)</code> : array of options something like this <code>array('http://placehold.it/250x80', 'http://placehold.it/250x80')</code><br>
+                <code>$value (string)</code> : label value<br>
+                <code>$help (string - optional)</code> : help text shown under the label label
+              </td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>bootstrap <code>.form-group</code> class with label and an awesome radio images</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>HTML</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+    
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small>admin_select( <code>$label = ''</code>, <code>$name = ''</code>, <code>$options = array()</code>, <code>$value = ''</code>, <code>$help = FALSE</code> )</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td>
+                <code>$label (string)</code> : select label<br>
+                <code>$name (string)</code> : select name<br>
+                <code>$options (array)</code> : array of options something like this <code>array('Enable' => 'true', 'Disable' => 'false')</code><br>
+                <code>$value (string)</code> : select value<br>
+                <code>$help (string - optional)</code> : help text shown under the select label
+              </td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>bootstrap <code>.form-group</code> class with label and an awesome radio images</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>HTML</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+    
+    <div class="col-md-12">
+      <div class="box">
+        <div class="box-body">
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2">Function: <small>admin_upload( <code>$label = ''</code>, <code>$name = ''</code>, <code>$value = ''</code>, <code>$help = FALSE</code> )</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Parameters</td>
+              <td>
+                <code>$label (string)</code> : select label<br>
+                <code>$name (string)</code> : select name<br>
+                <code>$value (string)</code> : option value<br>
+                <code>$help (string - optional)</code> : help text shown under the input label
+              </td>
+            </tr>
+            <tr>
+              <td class="bold">Return</td>
+              <td>bootstrap <code>.form-group</code> class with label and an file input using media manager</td>
+            </tr>
+            <tr>
+              <td class="bold">Return type</td>
+              <td>HTML</td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col-md-6 -->
+    
+  </div>
+
+
+  <p class="lead">Demo code for custom options functions</p>
+<pre class="prettyprint language-html"><code class="language-html" data-lang="html">&LT;?php
+
+/*
+ * this code from the default theme in our system
+ * 
+ */
+
+  $themes = array(
+              'default' => 'default',
+              'cerulean' => 'cerulean',
+              'cosmo' => 'cosmo',
+              'cyborg' => 'cyborg',
+              'darkly' => 'darkly',
+              'flatly' => 'flatly',
+              'journal' => 'journal',
+              'lumen' => 'lumen',
+              'paper' => 'paper',
+              'readable' => 'readable',
+              'sandstone' => 'sandstone',
+              'simplex' => 'simplex',
+              'slate' => 'slate',
+              'solar' => 'solar',
+              'spacelab' => 'spacelab',
+              'superhero' => 'superhero',
+              'united' => 'united',
+              'yeti' => 'yeti'
+          );
+
+  $types = array(
+              1 =>  THEME_FOLDER.'assets/images/slider/Slide-01.png',
+              2 =>  THEME_FOLDER.'assets/images/slider/Slide-02.png',
+              3 =>  THEME_FOLDER.'assets/images/slider/Slide-03.png'
+          );
+
+  $layouts = array(
+              1 =>  THEME_FOLDER.'assets/images/blog/1cols.png',
+              2 =>  THEME_FOLDER.'assets/images/blog/2cols.png',
+              3 =>  THEME_FOLDER.'assets/images/blog/3cols.png'
+          );
+?>
+
+
+      &LT;div class="col-xs-12">
+        &LT;?=admin_select('Home slider', 'home_slider', sliders_list(), get_option('home_slider'), 'Select a slider for home page.')?>
+      &LT;/div>
+
+      &LT;div class="col-xs-12">
+        &LT;?=admin_radio_image ('Slider type', 'slider_type', $types, get_option('slider_type'), 'Select a slider type.')?>
+      &LT;/div>
+
+      &LT;div class="col-xs-12">
+        &LT;?=admin_radio_image ('Post layout', 'posts_layout', $layouts, get_option('posts_layout'), 'Select a post layout.')?>
+      &LT;/div>
+
+      &LT;div class="col-xs-12">
+        &LT;?=admin_select('Bootstrap Theme', 'bootstrap_theme', $themes, get_option('bootstrap_theme'), 'Select a bootstrap theme.')?>
+      &LT;/div>
+
+      &LT;div class="col-xs-12">
+        &LT;?=admin_radio('Post comments', 'post_comments', get_option('post_comments'), 'Enable/Disable post comments.')?>
+      &LT;/div>
+
+
+      &LT;div class="col-xs-12">
+        &LT;?=admin_radio('Page comments', 'page_comments', get_option('page_comments'), 'Enable/Disable page comments.')?>
+      &LT;/div>
+
+      &LT;div class="col-xs-12">
+        &LT;?=admin_input_spinner('Posts per page', 'posts_per_page', get_option('posts_per_page'), 'Set number of posts per page.')?>
+      &LT;/div>
+
+      &LT;div class="col-xs-12">
+        &LT;?=admin_input_spinner('Home page posts', 'home_posts_num', get_option('home_posts_num'), 'Set number of posts on home page.')?>
+      &LT;/div>
+
+?>
+</code></pre>
+
+  <p class="lead">This code will return this page :</p>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="thumbnail">        
+        <a class="fancybox" href="assets/imgs/dashboard-06.png"><img src="assets/imgs/dashboard-06.png" class="img-responsive"></a>
+        <div class="caption">
+          <h4>Theme options panel</h4>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+
+</section>
+
+        </div><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+
+      <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+          <b>Version</b> 2.0
+        </div>
+        <strong>Copyright &copy; 2017 <a href="http://eadhassan.com">Ead Hassan</a>.</strong> All rights reserved.
+      </footer>
+
+    </div><!-- ./wrapper -->
+
+    <!-- jQuery 2.1.4 -->
+    <script src="assets/plugins/jquery/jquery-2.1.4.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="assets/dist/js/app.min.js"></script>
+    <!-- SlimScroll 1.3.0 -->
+    <script src="assets/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="assets/plugins/fancybox/js/jquery.fancybox.js"></script>
+    <script src="assets/code-prettify/src/run_prettify.js"></script>
+    <script src="assets/docs.js"></script>
+
+  <script type="text/javascript">
+    //jQuery for page scrolling feature - requires jQuery Easing plugin
+    $(function() {
+        $('a[href^="#"]').each(function() {
+            $(this).bind('click', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 500, 'linear');
+                event.preventDefault();
+            });            
+        });
+
+      $('.fancybox').fancybox();
+    }); 
+  </script>
+
+  <script type="text/javascript">
+    $(function(){
+      $("pre").not('.hierarchy').slimScroll({ 
+        scrollBy: '10px', 
+        useFixedHeight : false
+      });
+    });
+  </script>
+
+  </body>
+</html>
